@@ -1,0 +1,173 @@
+.description {
+  max-width: 60rem;
+  margin: 4.5rem auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 4.98rem;
+
+  &__info {
+    max-width: 28.125rem;
+  }
+
+  &__title {
+    margin-bottom: 1.56rem;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+  }
+
+  .light {
+    color: #333;
+  }
+
+  .dark {
+    color: #f4acc4;
+  }
+
+  .subtitle-light {
+    color: #333;
+  }
+
+  .subtitle-dark {
+    color: #d2d2d2;
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 1.125rem;
+    margin-bottom: 1.5625rem;
+    line-height: 1.875rem;
+  }
+
+  &__history {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.0425rem;
+    margin: 0;
+  }
+
+  &__collapse {
+    display: flex;
+    flex-direction: column;
+
+    & button {
+      text-align: end;
+    }
+  }
+
+  &__statistic {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    max-width: 8.625rem;
+  }
+
+  &__boxTitle {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: start;
+    padding-bottom: 0.5625rem;
+    min-width: 8.6875rem;
+  }
+
+  &__boxSubtitle {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
+  .boxTitle-dark {
+    color: #ff4c2b;
+  }
+
+  .boxTitle-light {
+    color: #4eb2ec;
+  }
+
+  &__img {
+    max-width: 28.125rem;
+    width: 100%;
+  }
+}
+
+@media screen and (width <= 1100px) {
+  .description {
+    max-width: 52.125rem;
+    padding-right: 1.5rem;
+    padding-left: 1.25rem;
+
+    &__info {
+      max-width: 29.0625rem;
+    }
+
+    &__title {
+      margin-bottom: 1.25rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      margin-bottom: 1.3125rem;
+      line-height: 1.75rem;
+    }
+
+    &__history {
+      font-size: 1.5rem;
+      margin-bottom: 3.125rem;
+    }
+
+    &__collapse {
+      font-size: 1rem;
+      line-height: 1.5625rem;
+    }
+
+    &__img {
+      max-width: 17.875rem;
+    }
+  }
+}
+
+@media screen and (width <= 767px) {
+  .description {
+    justify-content: center;
+    padding: 0;
+    padding: 0 0.5625rem;
+    margin-top: 1.5531rem;
+
+    &__title {
+      max-width: 14.5rem;
+      font-size: 1.2rem;
+    }
+
+    &__subtitle {
+      font-size: 0.8rem;
+      margin-bottom: 1.0625rem;
+      line-height: 1.7188rem;
+    }
+
+    &__history {
+      font-size: 1.2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    &__collapse {
+      font-size: 0.875rem;
+      line-height: 1.5625rem;
+      margin-bottom: 3.0625rem !important;
+    }
+
+    &__statistic {
+      row-gap: 1.875rem;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}

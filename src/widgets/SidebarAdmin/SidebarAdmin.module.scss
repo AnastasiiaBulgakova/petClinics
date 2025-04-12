@@ -1,0 +1,100 @@
+.dashboard {
+    display: flex;
+    width: 100%;
+    // height: 100%;
+    height: 100vh;
+    position: relative;
+    :global {
+        .ant-menu-item {
+            font-family: Inter;
+            font-weight: 700;
+            font-size: 1.5vw;
+            line-height: 29.05px;
+            letter-spacing: 0%;
+            color: white;
+            display: flex; 
+            align-items: center;
+            padding-left:  1rem;
+        }
+        .ant-menu-item-selected{
+            background-color: #7fb8ee;
+        }
+        .ant-menu-item:first-of-type{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+        .ant-menu{
+            background-color: #5496D4;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            height: 100%;
+            position: absolute;
+            overflow-y: auto;
+        }
+        .ant-menu-item p{
+            margin: 0;
+        }
+        .ant-menu-item:nth-child(8){
+            margin-top: 2rem;
+        }
+        .image{
+            margin: 0;
+        }
+       
+    }
+    &__title{
+        font-family: Inter;
+        font-weight: 900;
+        font-size: 2vw;
+        line-height: 38.73px;
+        letter-spacing: 0%;
+    }
+    &__content {
+        margin-left: 20%;
+        
+    }
+}
+.linkContainer{
+    display: flex;
+    align-items: center;
+}
+.image{
+    margin-right: 1rem;
+}
+.dashboard{
+    @media (max-width: 834px){
+        :global{
+            .ant-menu-item p{
+                display: none;
+            }
+            .ant-menu-item{
+                justify-content: center;        
+            }
+            .ant-menu{
+                width: max-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+        }
+        .image{
+            margin: 0;
+        }
+        &__content {
+            margin-left: max-content;
+            padding: 1rem;
+
+        }
+    }
+    @media (max-width: 360px){
+        :global{
+            .ant-menu{
+               padding: 0;
+
+            }
+        }
+    }
+}

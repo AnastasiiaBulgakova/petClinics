@@ -1,0 +1,88 @@
+.forum {
+  max-width: 68.75rem;
+  width: 100%;
+  margin: 1.8125rem auto 3.125rem;
+  box-shadow: 0 0.625rem 1.25rem 0 #12263f0d;
+  border-bottom-left-radius: 0.1875rem;
+  border-bottom-right-radius: 0.1875rem;
+
+  &__header {
+    height: 3.625rem;
+    padding: 1.25rem;
+    border-top-left-radius: 0.1875rem;
+    border-top-right-radius: 0.1875rem;
+    font-weight: 600;
+    line-height: 1.0588rem;
+  }
+
+  &__body {
+    padding: 1.25rem;
+    border-bottom-left-radius: 0.1875rem;
+    border-bottom-right-radius: 0.1875rem;
+  }
+
+  &__list {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  &__item {
+    list-style: none;
+    width: 100%;
+    height: 4.0625rem;
+    box-shadow: inset 0 0.3125rem 1.25rem 0 #12263f0d;
+  }
+
+  &__headerTheme-light {
+    background-color: #5496d433;
+  }
+
+  &__headerTheme-dark {
+    background-color: rgb(255 241 246 / 93%);
+    color: #3a4045;
+  }
+
+  &__bodyTheme-dark {
+    background-color: #fff;
+  }
+
+  @media screen and (width <= 75rem) {
+    & {
+      max-width: calc(100vw - 6.7188rem);
+      margin: 1.1875rem auto 1.625rem;
+    }
+
+    &__body {
+      padding: 0.75rem 0.625rem 1.6875rem;
+    }
+
+    &__list {
+      gap: 0.75rem;
+    }
+  }
+
+  @media screen and (width <= 25rem) {
+    & {
+      max-width: 22.5rem;
+      margin: 0 auto 1.5rem;
+    }
+
+    &__header {
+      font-size: 0.875rem;
+    }
+
+    &__body {
+      padding: 0.875rem 2.5713rem 3.75rem;
+    }
+
+    &__list {
+      gap: 0.875rem;
+    }
+  }
+
+  .switch {
+    position: absolute;
+  }
+}

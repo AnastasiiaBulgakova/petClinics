@@ -1,0 +1,72 @@
+.loginText {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8125rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.loginLink-light {
+  color: #1676f3;
+}
+
+.loginLink-dark {
+  color: #ff4c2b;
+
+  &:hover {
+    color: #ff4c2b;
+  }
+}
+
+.button {
+  width: 336px;
+  height: 56px;
+  cursor: pointer;
+
+  @media (width <= 768px) {
+    width: 266px;
+  }
+}
+
+.button-light {
+  background: #1676f3;
+}
+
+.button-dark {
+  background: #ff4c2b;
+}
+
+.terms {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #1b2b41b8;
+}
+
+.termsLink-light {
+  color: #1676f3;
+}
+
+.termsLink-dark {
+  color: #ff4c2b;
+
+  &:hover {
+    color: #ff4c2b;
+  }
+}
+
+.input {
+  width: 336px;
+  height: 57px;
+  margin-bottom: 16px;
+
+  @media (width <= 768px) {
+    width: 288px;
+  }
+}
+
+.label {
+  margin-bottom: 0 !important;
+}

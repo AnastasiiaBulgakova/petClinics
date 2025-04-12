@@ -1,0 +1,152 @@
+$font-stack:
+  open sans,
+  sans-serif;
+$font-weight: 400;
+
+.button {
+  width: 336px;
+  height: 56px;
+  margin-top: 15px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  @media (width <= 768px) {
+    width: 266px;
+    margin-top: 30px;
+  }
+}
+
+.inputSection {
+  display: flex;
+  flex-direction: column;
+  width: 336px;
+  height: 221px;
+  margin-bottom: 26px;
+
+  @media (width <= 768px) {
+    width: 288px;
+    height: 180px;
+    margin-bottom: 43px;
+  }
+}
+
+.input {
+  width: 336px;
+  height: 57px;
+  font-family: $font-stack;
+  font-size: 0.875 rem;
+  font-weight: $font-weight;
+  line-height: 1.375rem;
+  color: #18273af0;
+  border-radius: 3px;
+  border: 1px solid #1c375a29;
+
+  @media (width <= 768px) {
+    width: 288px;
+  }
+}
+
+.checkbox {
+  font-family: $font-stack;
+  font-size: 0.8125rem;
+  font-weight: $font-weight;
+  line-height: 0.9912rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 40px;
+
+  @media (width <= 768px) {
+    margin-bottom: 43px;
+  }
+}
+
+.checkbox-light {
+  color: #1b2b41b8;
+}
+
+.checkbox-dark {
+  color: #d2d2d2;
+}
+
+.forgotPasswordLink {
+  font-family: $font-stack;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.1062rem;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.forgotPasswordLink-dark {
+  color: #ff4c2b;
+
+  &:hover {
+    color: #ff4c2b;
+  }
+}
+
+.registerText {
+  font-family: $font-stack;
+  font-size: 0.8125rem;
+  font-weight: $font-weight;
+  line-height: 0.9912rem;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  @media (width <= 768px) {
+    margin-bottom: 40px;
+  }
+}
+
+.registerText-light {
+  color: #000;
+}
+
+.registerText-dark {
+  color: #d2d2d2;
+}
+
+.registerLink-light {
+  color: #1676f3;
+}
+
+.registerLink-dark {
+  color: #ff4c2b;
+
+  &:hover {
+    color: #ff4c2b;
+  }
+}
+
+.label .ant-form-item-label > label {
+  font-weight: $font-weight;
+  font-size: 0.75rem;
+  color: #1b2b41b8;
+  font-family: $font-stack;
+  line-height: 1.0212rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+  .ant-form-item-label > label {
+    color: #d2d2d2 !important;
+  }
+}
+
+.ant-form-vertical .ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-label {
+  padding: 0 0 5px;
+}
+
+.ant-form-item .ant-form-item-control-input {
+  min-height: 18px;
+}
+
+.ant-form-item .ant-form-item-label > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+}

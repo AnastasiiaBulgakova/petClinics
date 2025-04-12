@@ -1,0 +1,210 @@
+$black-font: #00000059;
+$grey-font: #3a4045;
+$red-font: #e8454d;
+$white-font: #fff;
+$android-grey-font: #ffffff59;
+$font-family-inter: 'Inter', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-size-sm: 0.75rem;
+$line-height-sm: 0.9075rem;
+
+.role,
+.role_Label,
+.dropdownMenu_Item {
+  font-family: $font-family-inter;
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.userWidget {
+  display: flex;
+  right: 0;
+  align-items: center;
+  justify-content: space-between;
+  // margin: 0 16px;
+  width: 197px;
+  height: 1.875rem;
+  z-index: 1001;
+
+  @media (width <= 768px) {
+    & {
+      width: 177px;
+    }
+  }
+}
+
+.notificationIcon {
+  position: relative;
+  z-index: 1000;
+  width: 1rem;
+  height: 1rem;
+
+  &Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.notificationSeparator {
+  width: 1px;
+  height: 24px;
+  background-color: #d9d9d9;
+
+  @media (width <= 360px) {
+    & {
+      left: 14px;
+      background-color: #2e75b7;
+    }
+  }
+}
+.bellIcon {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  background-image: url('src/shared/assets/images/icon-bell.svg');
+
+  @media (width <= 360px) {
+    & {
+      background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.4286 12.5716H11V6.50021C11 3.98057 9.1375 1.89842 6.71429 1.55199V0.857352C6.71429 0.462709 6.39464 0.143066 6 0.143066C5.60536 0.143066 5.28571 0.462709 5.28571 0.857352V1.55199C2.8625 1.89842 1 3.98057 1 6.50021V12.5716H0.571429C0.255357 12.5716 0 12.827 0 13.1431V13.7145C0 13.7931 0.0642857 13.8574 0.142857 13.8574H4C4 14.9609 4.89643 15.8574 6 15.8574C7.10357 15.8574 8 14.9609 8 13.8574H11.8571C11.9357 13.8574 12 13.7931 12 13.7145V13.1431C12 12.827 11.7446 12.5716 11.4286 12.5716ZM6 14.7145C5.52679 14.7145 5.14286 14.3306 5.14286 13.8574H6.85714C6.85714 14.3306 6.47321 14.7145 6 14.7145ZM2.28571 12.5716V6.50021C2.28571 5.50735 2.67143 4.57521 3.37321 3.87342C4.075 3.17164 5.00714 2.78592 6 2.78592C6.99286 2.78592 7.925 3.17164 8.62679 3.87342C9.32857 4.57521 9.71429 5.50735 9.71429 6.50021V12.5716H2.28571Z' fill='%23FFFFFF'/%3E%3C/svg%3E%0A")
+        no-repeat;
+    }
+  }
+}
+
+.notificationBadge {
+  position: relative;
+  top: -7px;
+  left: 9px;
+  width: 9px;
+  height: 9px;
+  background-image: url('src/shared/assets/images/notification_bubble.svg');
+}
+
+.userInfo {
+  display: flex;
+  position: relative;
+  width: 130px;
+  justify-content: space-between;
+  flex-direction: row;
+  cursor: pointer;
+
+  &_role {
+    display: flex;
+    flex-direction: column;
+    order: 0;
+    font-family: $font-family-inter;
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+
+    &_Label {
+      color: $black-font;
+
+      @media (width <= 360px) {
+        & {
+          color: $white-font;
+        }
+      }
+    }
+
+    @media (width <= 360px) {
+      & {
+        color: $android-grey-font;
+      }
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline;
+    position: relative;
+    order: 1;
+    top: 11px;
+    width: 13px;
+    height: 7px;
+    background: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L6.5 6L12 0.5' stroke='%23000000'/%3E%3C/svg%3E%0A")
+      no-repeat;
+
+    @media (width <= 360px) {
+      & {
+        background: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 0.5L6.5 6L12 0.5' stroke='%23FEFEFE'/%3E%3C/svg%3E%0A")
+          no-repeat;
+      }
+    }
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    order: 2;
+  }
+}
+
+.dropdownMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 34px;
+  right: 10%;
+  width: 120px;
+  background-color: $white-font;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 #c3c4c680;
+  margin-top: 8px;
+  z-index: 10;
+
+  &_Item {
+    display: flex;
+    padding: 12px;
+    border: none;
+    background-color: $white-font;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+
+    &_Profile {
+      color: $grey-font;
+      display: flex;
+      align-items: center;
+      font-family: $font-family-open-sans;
+
+      &::before {
+        content: '';
+        position: relative;
+        width: 24px;
+        height: 24px;
+        left: -10%;
+        background-image: url('src/shared/assets/images/icon-person.svg');
+        filter: brightness(0.5);
+      }
+    }
+
+    &_LogOut {
+      color: $red-font;
+      display: flex;
+      align-items: center;
+      font-family: $font-family-open-sans;
+
+      &::before {
+        content: '';
+        position: relative;
+        width: 20px;
+        height: 20px;
+        left: -10%;
+        background-image: url('src/shared/assets/images/icon-exit.svg');
+      }
+    }
+  }
+}

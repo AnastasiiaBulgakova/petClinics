@@ -1,0 +1,54 @@
+.authWrapper {
+  display: block;
+  padding: 51px 26px 24px 28px;
+  margin: 100px auto;
+  width: 390px;
+  height: auto;
+  color: #1a293dd4;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 15px 24px 34px 0 #32323240;
+
+  @media (width <= 768px) {
+    width: 360px;
+    margin: auto;
+    padding-left: 35px;
+    padding-right: 37px;
+  }
+}
+
+.regWrapper {
+  display: block;
+  padding-left: 28px;
+  padding-right: 26px;
+  padding-bottom: 24px;
+  margin: 100px auto;
+  width: 390px;
+  height: auto;
+  color: #1a293dd4;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 15px 24px 34px 0 #32323240;
+
+  @media (width <= 768px) {
+    width: 360px;
+    margin: auto;
+    padding-top: 36px;
+    padding-left: 35px;
+    padding-right: 37px;
+  }
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 23px;
+
+  @media (width <= 768px) {
+    width: 132px;
+    height: 66px;
+  }
+}

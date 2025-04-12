@@ -1,0 +1,120 @@
+.greetingContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  max-width: 960px;
+  height: 594px;
+  border-bottom: 1px solid black;
+
+  @media (width <= 768px) {
+    flex-direction: column;
+    align-content: space-between;
+    height: 640px;
+    background-color: #05013163;
+  }
+}
+
+.imageContainer {
+  position: relative;
+  padding-left: 40px;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+
+  .image {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+
+    @media (width <= 768px) {
+      display: none;
+    }
+  }
+
+  @media (width <= 768px) {
+    position: absolute;
+    min-width: 360px;
+    height: 640px;
+    padding: 0;
+    background-color: #05013163;
+    background-image: url('src/shared/assets/images/greetingMobile.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: opacity(0.5);
+    z-index: 0;
+  }
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  place-content: space-between space-between;
+  margin-top: 20px;
+  width: 308px;
+  z-index: 2;
+
+  @media (width <= 768px) {
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+  }
+}
+
+.heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.4rem;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 280px;
+  z-index: 2;
+
+  .petsHealth {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #ad47a3;
+    text-transform: uppercase;
+    width: 404px;
+
+    &.darkTheme {
+      color: #d2d2d2 !important;
+    }
+
+    @media (width <= 768px) {
+      color: #ff4c2b;
+      width: 320px;
+    }
+  }
+
+  @media (width <= 768px) {
+    margin-top: 140px;
+    width: 100%;
+
+    &.lightTheme {
+      color: white !important;
+    }
+  }
+}
+
+.button {
+  width: 318px;
+  height: 74px;
+  margin-top: 20px;
+  background-color: #1890ff;
+  color: white;
+  border-radius: 30px;
+  font-size: 1.5rem;
+  z-index: 2;
+
+  &:hover {
+    background-color: #40a9ff;
+  }
+}
